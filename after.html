@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PRODUCT DEMAND PREDICTION</title>
+        <link rel = "icon" href ="img.img.png"
+            type = "image/x-icon">
+        <style>
+            body{
+            background-image: url('https://wallpaperaccess.com/full/3079628.jpg');
+            background-size: 1950px 1450px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            }
+        </style>
+    </head>
+    <h2 type="submit" style="height:30px; width:50px; background-color: rgb(133, 198, 204);"  ><a href="/" style="color: rgb(76, 116, 145);">⇱</a></h2>
+
+<body style="background-color:#e0d4b8;" align ="center">
+
+<div align="center">
+    {%if d2<= '2022' %}
+    <h1 style="color: rgb(215, 214, 183);text-align: right;"><center>⇝ number of products to brought in month and year of <span>{{d3}}</span>/<span>{{d2}}</span> is <span>{{data[0]}}</span>⇜</center></h1>
+
+    {%elif d2=='2023' %}
+    <h1 style="color: rgb(215, 214, 183);text-align: right;"><center>⇝ number of products to brought in month and year of <span>{{d3}}</span>/<span>{{d2}}</span> is <span>{{data[0]+15}}</span>⇜</center></h1>
+
+    {%elif d2>='2024' %}
+    <h1 style="color: rgb(215, 214, 183);text-align: right;"><center>⇝ number of products to brought in month and year of <span>{{d3}}</span>/<span>{{d2}}</span> is <span>{{data[0]+30}}</span>⇜</center></h1>
+
+    {%else%}
+    <h1 style="color: rgb(215, 214, 183);text-align: right;"><center>⇝ number of products to brought in month and year of <span>{{d3}}</span>/<span>{{d2}}</span> is <span>{{data[0]+60}}</span>⇜</center></h1>
+
+    {%endif%}
+    <h3 style="color: rgb(218, 112, 112);">⁂ this predicted results are accoring to the previous year results</h3>
+
+    <h2 style="color: rgb(161, 157, 200);text-align: right;"><center>∑⋙demand of <span>{{d}}</span> in 3 years</center></h2>
+
+
+</div>
+<div align="center">
+    
+    {%if d== 'colgate'%}
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/col_6.png"><br><br>
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/colgate19.png">
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/colgatepy20.png">
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/colgatepy21.png">
+
+
+    {%elif d =='gemini  tea powder'%}
+    <img style="background-color: white;" src="https://www.linkpicture.com/q/gemini.png"><br><br>
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/gemini19.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/gemini20.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/gemini21.png" >
+
+    {%elif d =='suger'%}
+    in kg<img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/suger.png" ><br><br>
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/suger19.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/suger20.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/suger21.png" >
+
+    {%elif d =='freedom sunflower oil'%}
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/oil_4.png" ><br><br>
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/oil19.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/oil20.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/oil21.png" >
+
+    {%elif d =='life boy soap'%}
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/lofeboy.png" ><br><br>
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/life19.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/life20.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/life21.png" >
+
+    {%elif d =='santoor'%}
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/santor.png" ><br><br>
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/santoor19.png" >
+    <img style="background-color: white; image-rendering: crisp-edges ;" src="https://www.linkpicture.com/q/santoor19.png" >
+
+    {%endif%}
+    <br><br>
+
+    <h2 type="submit" style="height:30px; width:100px; background-color: rgb(185, 204, 133);"  ><a href="/" style="color: rgb(46, 106, 106);">◀BACK</a></h2>
+
+    
+</div>
+</body>
+</html>
